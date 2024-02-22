@@ -13,6 +13,15 @@ function criptografar(string) {
 
 }
 
-let test = "Você conseguiu concluir o desafio";
+function descriptografar(string) {
+  const resultado = string
+  .replaceAll("enter", "e")
+  .replaceAll("imes", "i")
+  .replaceAll("ai", "a")
+  .replaceAll("obter", "o")
+  .replaceAll("ufat","u");
 
-console.log(criptografar (test));
+  return resultado;
+
+}
+
